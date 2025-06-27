@@ -2,7 +2,8 @@ from conan import ConanFile
 from conan.tools.cmake import CMakeToolchain, CMake, cmake_layout, CMakeDeps
 from conan.tools.env import VirtualBuildEnv, Environment
 from conan.tools.build import check_min_cppstd, check_max_cppstd
-from conan.tools.files import get
+from conan.tools.files import get, copy
+from conan.tools.files.symlinks import absolute_to_relative_symlinks
 import os
 
 
@@ -90,6 +91,7 @@ class PulsarClientCppConan(ConanFile):
             cmake.build()
 
     def package(self):
+        copy(self, "LICENSE", src=self.source_folder, dst=os.path.join(self.package_folder, "licenses"))
         cmake = CMake(self)
         cmake.configure(build_script_folder="pulsar-2.8.1/pulsar-client-cpp")
         cmake.install()
