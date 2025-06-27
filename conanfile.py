@@ -66,7 +66,6 @@ class PulsarClientCppConan(ConanFile):
         tc.variables["BUILD_PYTHON_WRAPPER"] = False
         tc.generate()
 
-        # We don't need that because of generators
         deps = CMakeDeps(self)
         deps.generate()
 
