@@ -1,0 +1,1 @@
+. "/home/andi.linux/Memgraph/pulsar_build/test_package/build/gcc-13-armv8-gnu20-release/generators/deactivate_conanrunenv-release-armv8.sh"

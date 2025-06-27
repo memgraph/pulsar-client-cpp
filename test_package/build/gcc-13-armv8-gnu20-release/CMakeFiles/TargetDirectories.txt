@@ -1,0 +1,3 @@
+/home/andi.linux/Memgraph/pulsar_build/test_package/build/gcc-13-armv8-gnu20-release/CMakeFiles/example.dir
+/home/andi.linux/Memgraph/pulsar_build/test_package/build/gcc-13-armv8-gnu20-release/CMakeFiles/edit_cache.dir
+/home/andi.linux/Memgraph/pulsar_build/test_package/build/gcc-13-armv8-gnu20-release/CMakeFiles/rebuild_cache.dir
